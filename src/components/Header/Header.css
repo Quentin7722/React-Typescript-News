@@ -1,0 +1,141 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  justify-content: space-between;
+  max-width: 100%;
+}
+h1 {
+  font-size: 45px;
+}
+.toggle-button {
+  padding: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  cursor: pointer;
+}
+.toggle-button .bar {
+  transition: 0.5s ease-out;
+  height: 5px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+.toggle-button.active span:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.toggle-button.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-button.active span:nth-child(3) {
+  transform: translateY(-14px) rotate(-45deg);
+  top: 10px;
+}
+.settings {
+  font-size: 35px;
+  position: fixed;
+  top: 0;
+  left: -200%;
+  width: 100%;
+  transition: all 0.9s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
+}
+.settings.active {
+  left: 0;
+}
+
+.flags {
+  display: flex;
+  padding: 20px;
+}
+.flag {
+  max-width: 100px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.7s ease;
+  border: 1px solid black;
+}
+.flag:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 5px rgb(99, 99, 240);
+}
+.flag.active {
+  box-shadow: 0 0 10px 5px rgb(99, 99, 240);
+}
+.container-input {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+input {
+  height: 30px;
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  width: 200px;
+  transition: 0.4s ease-in-out;
+}
+input:focus {
+  outline: none;
+  width: 300px;
+  border: solid 3px rgb(82, 85, 255);
+}
+.icon {
+  position: absolute;
+  top: 17px;
+  right: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 860px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .container-input {
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+  }
+  input {
+    width: 120px;
+  }
+  input:focus {
+    width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 25px;
+  }
+  .flags {
+    flex-direction: column;
+  }
+  .flag {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 375px) {
+  input {
+    width: 120px;
+  }
+  input:focus {
+    width: 150px;
+  }
+}

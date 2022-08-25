@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+
+body {
+  background-color: white;
+  font-family: "Forum", cursive;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: overlay;
+  max-width: 100vw;
+}
+body .settings.active {
+  overflow: hidden;
+}
+h1 {
+  font-size: 40px;
+}
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 50px;
+  align-items: stretch;
+  padding: 30px;
+}
+.content {
+  padding: 5px;
+}
+.settings.active ~ body {
+  overflow-y: hidden;
+}
+@media (max-width: 800px) {
+  .articles {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}

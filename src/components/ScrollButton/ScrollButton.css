@@ -1,0 +1,43 @@
+.button {
+  position: fixed;
+  width: 60px;
+  border-radius: 100%;
+  right: 25px;
+  bottom: 40px;
+  height: 60px;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  background-color: white;
+}
+.button:hover {
+  animation: bounce 2s ease infinite;
+}
+.icon-arrow {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  color: rgb(27, 27, 254);
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    left: 25px;
+  }
+}
