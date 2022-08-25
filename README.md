@@ -14,11 +14,11 @@ Ajoutez la clé d'API News au fichier "exemple.env" puis renommer le fichier ".e
 
 ### Installation
 
-Executez la commande `npm install` depuis le répertoire du projet.
+Lancez la commande `npm install` depuis le répertoire du projet.
 
 ## Démarrage
 
-Executez la commande `npm start` depuis le répertoire du projet.
+Lancez la commande `npm start` depuis le répertoire du projet.
 
 ## Fabriqué avec
 
