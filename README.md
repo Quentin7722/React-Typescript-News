@@ -6,7 +6,7 @@ Une application pour suivre l'actualité internationale construite avec React.js
 
 ## Pour commencer
 
-Ajoutez la clé d'API News au fichier "exemple.env" puis renommer le fichier ".env".
+Ajouter la clé d'API News au fichier "exemple.env" puis renommer le fichier ".env".
 
 ### Pré-requis
 
@@ -14,11 +14,11 @@ Ajoutez la clé d'API News au fichier "exemple.env" puis renommer le fichier ".e
 
 ### Installation
 
-Lancez la commande `npm install` depuis le répertoire du projet.
+Lancer la commande `npm install` depuis le répertoire du projet.
 
 ## Démarrage
 
-Lancez la commande `npm start` depuis le répertoire du projet.
+Lancer la commande `npm start` depuis le répertoire du projet.
 
 ## Fabriqué avec
 
